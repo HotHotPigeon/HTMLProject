@@ -3,5 +3,6 @@ import BasicDemo from '../components/BasicDemo.vue'
 </script>
 
 <template>
-  <BasicDemo/>
+  <BasicDemo />
+
 </template>
