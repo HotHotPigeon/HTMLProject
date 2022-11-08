@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import MaterialyDoNauki from '../views/MaterialyDoNauki.vue'
 import Zadania from '../views/Zadania.vue'
 import GaleriaProjektow from '../views/GaleriaProjektow.vue'
+import Gra from '../views/Gra.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,9 +25,14 @@ const router = createRouter({
     },
     {
       path: '/galeriaprojektow',
-      name: '/GaleriaProjektow',
+      name: 'GaleriaProjektow',
       component: GaleriaProjektow
     },
+  {
+    path: '/gra',
+    name: 'Gra',
+    component: Gra
+  },
   ]
 })
 
