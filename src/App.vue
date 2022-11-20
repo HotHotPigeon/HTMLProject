@@ -4,9 +4,14 @@ import Navigation from './components/Navigation/Navigation.vue';
 </script>
 
 <template>
-  <Navigation />
-  <RouterView />
+    <Navigation />
+    <div class="page-content">
+        <RouterView />
+    </div>
 </template>
 
 <style scoped>
+.page-content {
+    padding-left: 328px;
+}
 </style>
