@@ -1,6 +1,5 @@
 <template>
-    <h1>Galeria Projektów</h1>
+ <RouterView>
 
-<h2>NARAZIE NIE MA TU PROJEKTOW</h2>
-
+ </RouterView>
 </template>
