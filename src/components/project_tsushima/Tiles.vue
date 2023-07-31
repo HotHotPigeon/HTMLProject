@@ -1,74 +1,85 @@
 <script setup lang="ts">
+const tiles = [
+    {
+        type: "vertical",
+        content: [
+            {
+                triangle: false,
+                title: "eksploration",
+                icon: ""
+            },
+            {
+                triangle: true,
+                title: "artifacts",
+                icon: ""
+            },
+            {
+                triangle: false,
+                title: "satchel",
+                icon: ""
+            },
+        ],
+
+    },
+    {
+        type: "horizontal",
+        content: [
+            {
+                triangle: false,
+                title: "vanity gear",
+                current: 48,
+                max: 59
+            },
+            {
+                triangle: false,
+                title: "hot springs",
+                current: 18,
+                max: 18
+            },
+            {
+                triangle: false,
+                title: "bamboo strikes",
+                current: 16,
+                max: 16
+            },
+            {
+                triangle: false,
+                title: "shinto shrines",
+                current: 16,
+                max: 16
+            },
+            {
+                triangle: false,
+                title: "pillars of honor",
+                current: 23,
+                max: 23
+            },
+            {
+                triangle: false,
+                title: "inari shrines",
+                current: 49,
+                max: 49
+            },
+            {
+                triangle: false,
+                title: "haiku",
+                current: 19,
+                max: 19
+            },
+            {
+                triangle: false,
+                title: "duels",
+                current: 5,
+                max: 5
+            },
+        ],
+    },
+];
 </script>
 
 <template>
-    <div class="tiles--vertical">
-        <div>
-            <span>TRIANGLE</span>
-            <p>EXPLORATION</p>
-            <span>ICON</span>
-        </div>
+    <div v-for="element in tiles" :class="`tiles--${element.type}`">
 
-        <div>
-            <span>TRIANGLE</span>
-            <p>EXPLORATION</p>
-            <span>ICON</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>EXPLORATION</p>
-            <span>ICON</span>
-        </div>
-    </div>
-    <div class="tiles--horizontal">
-        <div>
-            <span>TRIANGLE</span>
-            <p>VANITY GEAR</p>
-            <span>48/59</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>HOT SPRINGS</p>
-            <span>18/18</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>BAMBOO STRIKES</p>
-            <span>16/16</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>SHINTO SHRINES</p>
-            <span>16/16</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>PILLARS OF HONOR</p>
-            <span>23/23</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>INARI SHRINES</p>
-            <span>49/49</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>HAIKU</p>
-            <span>19/19</span>
-        </div>
-
-        <div>
-            <span>TRIANGLE</span>
-            <p>DUELS</p>
-            <span>5/5</span>
-        </div>
     </div>
 </template>
 
