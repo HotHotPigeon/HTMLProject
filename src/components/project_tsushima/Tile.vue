@@ -1,11 +1,16 @@
 <script setup lang="ts">
+defineProps<{
+    triangle: boolean;
+    title: string;
+    icon?: string;
+}>();
 </script>
 
 <template>
         <div >
-            <span>TRIANGLE</span>
-            <p>EXPLORATION</p>
-            <span>ICON</span>
+            <span>{{ triangle }}</span>
+            <p>{{title}}</p>
+            <span>{{icon}}</span>
         </div>
 </template>
 
